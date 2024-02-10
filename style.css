@@ -1,0 +1,114 @@
+:root{
+    --fuentePrincipal: "Sixtyfour", sans-serif;
+    --colorPrimario: #000;
+    --colorSecundario: #FFFFFF;
+    --colorTerciario: #597e8d;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}  
+
+/*globales*/
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;    
+    background-color: var(--colorPrimario);
+    background-image: url(../encriptador/imagenes/code.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    backdrop-filter: blur(1.5px);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header__texto{
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+}
+
+/* informacion */
+
+.informacion{
+    font-size: 1.8rem;    
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: var(--colorSecundario);
+}
+
+/* footer */
+
+.footer{
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    color: var(--colorSecundario);
+}
+
+/* parrafos */
+
+.parrafo__texto{
+    margin: 1.8rem 1.8rem;
+    font-size: 1.8rem;
+    font-family: var(--fuentePrincipal);
+    text-align: left;
+    color: var(--colorSecundario);
+}
+
+/*text area*/
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.textArea{
+    margin: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--fuentePrincipal);
+    resize: none;
+}
+
+/*boton*/
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.boton{
+    background-color: var(--colorTerciario);
+    font-family: var(--fuentePrincipal);
+    color: var(--colorSecundario);
+    margin: .5rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 760px) {
+    .box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .botones{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
