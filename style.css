@@ -20,7 +20,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;    
     background-color: var(--colorPrimario);
-    background-image: url(imagenes/code.png);
+    background-image: url("imagenes/code.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
